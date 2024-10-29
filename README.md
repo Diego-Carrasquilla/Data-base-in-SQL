@@ -1,7 +1,7 @@
 
-# Proyecto de Base de Datos: Zonas Verdes en Medellín
+# Proyecto de Base de Datos sobre Zonas Verdes en Medellín
 
-Este repositorio contiene todos los archivos y el código relacionados con la creación de una base de datos sobre las zonas verdes en Medellín. Este es un proyecto universitario realizado por:
+Este repositorio contiene el desarrollo de una base de datos relacionada con zonas verdes en Medellín. Este proyecto universitario fue creado por los aspirantes a ingenieros:
 
 - **Juan Pablo Restrepo Correa**
 - **Andrés Felipe Jaramillo Larrañaga**
@@ -9,18 +9,26 @@ Este repositorio contiene todos los archivos y el código relacionados con la cr
 
 ## Descripción del Proyecto
 
-La base de datos se centra en las zonas verdes de Medellín. Para obtener los datos, utilizamos un archivo proporcionado por la Alcaldía de Medellín, disponible en [Datos Abiertos Colombia](https://www.datos.gov.co).
+Este proyecto surge a partir de un archivo de datos proporcionado por la Alcaldía de Medellín, disponible en [datos.gov.co](https://www.datos.gov.co), que contiene información relevante sobre espacios verdes en la ciudad.
 
-El archivo original no incluía un código único de identificación para cada espacio, por lo que implementamos un código con el siguiente formato: `(XXXX-XXXX-XX)`, donde:
+### Objetivo
 
-- **XXXX**: ID del espacio
-- **XXXX**: Código del barrio
-- **XX**: Código de la comuna
+Nuestro objetivo principal fue organizar y estructurar estos datos en una base de datos SQL accesible y navegable, que permitirá un análisis detallado y una mejor administración de la información sobre las zonas verdes en Medellín.
 
-Esta identificación facilita el manejo y la organización de la información en la base de datos.
+### Estructura de Datos
 
-## Tecnologías Utilizadas
+Para lograr una identificación única de cada espacio, creamos un código de identificación propio que no existía en el archivo original. Este código tiene el formato `(XXXX-XXXX-XX)`, donde:
+- **ID espacio**: identifica el espacio específico,
+- **Código de barrio**: identifica el barrio al que pertenece,
+- **Código de comuna**: identifica la comuna correspondiente.
 
-- **MySQL** para la creación y gestión de la base de datos.
-- **Docker** para el manejo de instancias y servicios SQL, simplificando la configuración y el despliegue.
+## Herramientas Utilizadas
 
+Para el desarrollo de este proyecto, utilizamos:
+- **Docker** y **SQL** para manejar el servicio de bases de datos.
+- **C#**, **Dart**, **Python**, y **.NET** para escribir los scripts necesarios.
+- **Postman** para la generación y pruebas de solicitudes.
+
+## Uso
+
+Para utilizar y contribuir a este proyecto, clona el repositorio y sigue las instrucciones en los archivos de cada módulo.
